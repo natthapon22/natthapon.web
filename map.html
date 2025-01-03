@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนที่สถานที่ท่องเที่ยวในจังหวัดสุรินทร์</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .map-container {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+        }
+        .info-container {
+            width: 80%;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+        .info-container h2 {
+            color: #2e8b57;
+        }
+        
+        .navbar {
+            background-color: #2e8b57;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* กำหนดการแสดงแผนที่ตรงกลาง */
+        iframe {
+            display: block;
+            margin: 0 auto;
+            border: 0;
+        }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+        <a href="homepage.html">หน้าหลัก</a>
+        <a href="lanmark.html">สถานที่แนะนำ</a>
+        <a href="food.html">ร้านอาหาร</a>
+        <a href="map.html">แผนที่</a>
+        <a href="contact.html">ติดต่อเรา</a>
+    </div>
+
+    <header>
+        <h1>แผนที่สถานที่ท่องเที่ยวในจังหวัดสุรินทร์</h1>
+        <p>ค้นหาสถานที่ท่องเที่ยวและเส้นทางในสุรินทร์</p>
+    </header>
+
+    <div class="info-container">
+        <h2>สถานที่ท่องเที่ยวในจังหวัดสุรินทร์</h2>
+        <p>ในการเดินทางมาสำรวจจังหวัดสุรินทร์ที่เต็มไปด้วยความสวยงามและวัฒนธรรมที่หลากหลาย คุณสามารถใช้แผนที่ด้านบนเพื่อดูเส้นทางไปยังสถานที่ต่างๆ ที่น่าสนใจ เช่น:</p>
+        <ul>
+            <li><strong>ปราสาทหินพนมรุ้ง</strong> - ปราสาทโบราณที่มีความสำคัญทางประวัติศาสตร์ ตั้งอยู่บนยอดเขาพนมรุ้ง</li>
+            <li><strong>สวนสมเด็จพระศรีนครินทร์</strong> - สวนสาธารณะสำหรับการพักผ่อนที่เหมาะสำหรับครอบครัว</li>
+            <li><strong>ตลาดเซียงกง</strong> - ตลาดท้องถิ่นที่เต็มไปด้วยสินค้าพื้นเมืองของสุรินทร์</li>
+            <li><strong>เขตรักษาพันธุ์สัตว์ป่าทุ่งใหญ่</strong> - พื้นที่ธรรมชาติที่มีสัตว์ป่าและพืชพันธุ์ที่หลากหลาย</li>
+        </ul>
+
+        <h2>ร้านอาหารแนะนำในสุรินทร์</h2>
+        <p>
+            สุรินทร์เป็นที่รู้จักในด้านอาหารท้องถิ่นที่อร่อยและมีเอกลักษณ์ รสชาติเข้มข้นและส่วนผสมสดใหม่ที่ใช้จากธรรมชาติ นอกจากนี้ยังมีร้านอาหารมากมายที่ให้บริการอาหารทั้งในรูปแบบร้านเล็ก ๆ จนถึงร้านหรูที่มีการบริการที่ดี ตัวอย่างร้านอาหารที่น่าสนใจในสุรินทร์ ได้แก่
+        </p>
+        <ul>
+            <li><strong>ร้านอาหารบ้านสวนสุรินทร์</strong> - ร้านอาหารท้องถิ่นที่มีเมนูอาหารพื้นบ้านอย่างเช่น แกงขี้เหล็ก ไก่ย่าง และข้าวเหนียวหมูปิ้ง</li>
+            <li><strong>ร้านข้าวต้มกุ๊ยสุรินทร์</strong> - ร้านข้าวต้มที่มีเมนูหลากหลายทั้งข้าวต้มกุ๊ย ข้าวต้มปลากระพง และข้าวต้มมัดที่รสชาติอร่อย</li>
+            <li><strong>ร้านครัวป่าริมน้ำ</strong> - ร้านอาหารบรรยากาศดีริมแม่น้ำ มีเมนูอาหารทะเลสดใหม่และอาหารไทยรสเด็ด</li>
+            <li><strong>ร้านอาหารพิมพ์ใจ</strong> - ร้านอาหารที่เสิร์ฟอาหารไทยยอดนิยมเช่น ต้มยำกุ้ง ผัดไทย และผัดผักบุ้งไฟแดง</li>
+        </ul>
+        <p>ใช้แผนที่เพื่อค้นหาเส้นทางที่สะดวกที่สุดไปยังสถานที่ต่างๆ ในจังหวัดสุรินทร์</p>
+        <h2>แผนที่จังหวัดสุรินทร์</h2>
+        <p>แผนที่แสดงตำแหน่งของจังหวัดสุรินทร์:</p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.7490916049817!2d103.49380821492852!3d14.880219469701482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3116e98b18d6b207%3A0x4dbf426bf1cf4d06!2z4Lix4Lix4LiX4Lij!5e0!3m2!1sth!2sth!4v1672764905879!5m2!1sth!2sth" width="600" height="450" loading="lazy"></iframe>
+</body>
+</html>
